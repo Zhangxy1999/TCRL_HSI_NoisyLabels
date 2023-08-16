@@ -6,7 +6,7 @@ Recently, hyperspectral image classification (HIC) with noisy labels is attracti
 
 * flowchart
 <p align="center">
-	<img src = "fig/TCRL.png" width="900"><br>
+	<img src = "Zhangxy1999/TCRL_HSI_NoisyLabels/blob/main/fig/TCRL.png" width="900"><br>
 </p>
 
 # Dependency
@@ -19,7 +19,7 @@ Recently, hyperspectral image classification (HIC) with noisy labels is attracti
 
 # Usage
 * Download the dataset from the [website](https://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes), and then modify the **data path** in 'HSI_dataset.py'->'load_dataset(Dataset):'
-* Run 'TCRL_main.py' for training and test. The demo is conducted on the UP dataset with 52 clean samples and 24 noisy samples under sym noise type. 
+* Run 'TCRL_main.py' for training and test. The demo is conducted on the UP dataset with 52 clean samples and 24 noisy samples under sym noise type. The results can be found in folder 'log/UPXXXXX'.
 * Other datasets: open the 'configs --> tcrl.py', then modify the following five parameters 'dataset/input_channel/num_classes/train_size/percent', and run 'TCRL_main.py'.
 
 Note: Some results are provided in the folder 'TCRL-result'. Our method has been tested on both Windows and Linux platforms, and the results may vary slightly due to differences in the system and GPU.
@@ -37,7 +37,7 @@ If you are interested in our repository and our paper, please cite the following
   volume={61},
   number={},
   pages={1-16},
-  doi={10.1109/TGRS.2023.3292142}}                                        
+  doi={10.1109/TGRS.2023.3292142}}                                                                                                                                                          
 ```
 If there are any questions, please feel free to contact Mr. Zhang (xinyu_zhang@stu.xidian.edu.cn).
 
