@@ -6,7 +6,7 @@ Recently, hyperspectral image classification (HIC) with noisy labels is attracti
 
 * flowchart
 <p align="center">
-	<img src = "Zhangxy1999/TCRL_HSI_NoisyLabels/blob/main/fig/TCRL.png" width="900"><br>
+	<img src = "fig/TCRL.png" width="900"/><br>
 </p>
 
 # Dependency
@@ -37,7 +37,7 @@ If you are interested in our repository and our paper, please cite the following
   volume={61},
   number={},
   pages={1-16},
-  doi={10.1109/TGRS.2023.3292142}}                                                                                                                                                          
+  doi={10.1109/TGRS.2023.3292142}}                                                                                                                                                                      
 ```
 If there are any questions, please feel free to contact Mr. Zhang (xinyu_zhang@stu.xidian.edu.cn).
 
