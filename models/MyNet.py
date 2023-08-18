@@ -12,7 +12,6 @@ class SPAM(nn.Module):
         self.sigmoid = nn.Sigmoid()
 
     def forward(self, x, eps=1e-5):
-        # feature descriptor on the global spatial information
         N, C, height, width = x.size()
         channel_center = x.view(N, C, -1)[:, :, int((x.shape[2] * x.shape[3] - 1) / 2)]
         channel_center = channel_center.unsqueeze(2)
@@ -32,9 +31,8 @@ class SPAN(nn.Module):
         # dimension reduction
         self.SPAM = SPAM()
         self.conv_DR = nn.Sequential(
-                # LKA(band, 30),
                 nn.Conv2d(in_channels=band, out_channels=30, kernel_size=1, padding=0, stride=1),
-                nn.BatchNorm2d(30, eps=0.001, momentum=0.1, affine=True),  # 动量默认值为0.1
+                nn.BatchNorm2d(30, eps=0.001, momentum=0.1, affine=True),  
                 nn.ReLU(inplace=True)
             )
 
